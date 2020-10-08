@@ -1,0 +1,23 @@
+{
+  "name": "kmu ecampus darkmode",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "permissions": [
+      "tabs",
+      "<all_urls>",
+      "activeTab",
+      "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://ecampus.kookmin.ac.kr/*"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "manifest_version": 2
+}

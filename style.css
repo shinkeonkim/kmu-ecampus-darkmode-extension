@@ -1,0 +1,58 @@
+.container-fluid, .navbar-brand, .usermenu {
+    background-color: rgb(73, 71, 60)!important;
+}
+
+
+
+
+
+#region-main, #page-container {
+    background-color: rgb(66, 73, 82)!important;
+}
+
+.course_box {
+    background-color: rgb(41, 46, 51)!important;
+}
+
+#page-blocks .header {
+    background-color: rgb(41, 46, 51)!important;
+    border: 1px solid rgb(179, 179, 179)!important;
+}
+
+#page-blocks .content {
+    background-color: rgb(66, 73, 82)!important;
+    border: 1px solid rgb(179, 179, 179)!important;
+}
+
+.modal-body {
+    background-color: rgb(41, 46, 51)!important;
+}
+.modal-header {
+    background-color: rgb(73, 71, 60)!important;
+}
+
+.image {
+    background-color: transparent!important;
+}
+
+a.btn{
+    background-color: rgb(150, 80, 47)!important;
+    color: rgb(255, 255, 255)!important;
+}
+
+.btn > span {
+    color: rgb(233, 122, 71)!important;
+}
+
+
+
+
+h1,h2,h3,h4,h5 {
+    color: rgb(233, 122, 71)!important;
+}
+
+
+
+.date {
+    color: white!important;
+}
