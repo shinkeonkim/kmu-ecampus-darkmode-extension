@@ -1,11 +1,18 @@
-.container-fluid, .navbar-brand, .usermenu {
+body {
+    color: rgb(179, 179, 179)!important;
+}
+
+/* nav바 */
+.navbar-brand,.coursename, .usermenu {
+    background-color: rgb(73, 71, 60)!important;
+}
+
+.navbar .container-fluid {
     background-color: rgb(73, 71, 60)!important;
 }
 
 
-
-
-
+/* main 화면 */
 #region-main, #page-container {
     background-color: rgb(66, 73, 82)!important;
 }
@@ -24,6 +31,19 @@
     border: 1px solid rgb(179, 179, 179)!important;
 }
 
+/* 공지사항 */
+.ubboard_container, .ubboard_table, .ubboard .ubboard_table th.header {
+    background-color: rgb(66, 73, 82)!important;
+}
+
+/* 강의 화면 */
+body.coursemos-layout-course.coursemos-layout-coursehome .course-header {
+    background-color: rgb(59, 59, 57)!important;
+    background-image: none!important;
+
+}
+
+/* 모달 */
 .modal-body {
     background-color: rgb(41, 46, 51)!important;
 }
@@ -31,10 +51,8 @@
     background-color: rgb(73, 71, 60)!important;
 }
 
-.image {
-    background-color: transparent!important;
-}
 
+/* 버튼 */
 a.btn{
     background-color: rgb(150, 80, 47)!important;
     color: rgb(255, 255, 255)!important;
@@ -46,13 +64,24 @@ a.btn{
 
 
 
-
+/* 제목 및 텍스트*/
+.site_notices .active a {
+    color: rgb(233, 122, 71)!important;
+}
 h1,h2,h3,h4,h5 {
     color: rgb(233, 122, 71)!important;
+}
+span, p {
+    color: rgb(179, 179, 179)!important;
+
 }
 
 
 
+/* etc */
 .date {
     color: white!important;
+}
+.image {
+    background-color: transparent!important;
 }
