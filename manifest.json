@@ -11,7 +11,7 @@
   "content_scripts": [
     {
       "matches": ["http://ecampus.kookmin.ac.kr/*"],
-      "css": ["style.css"],
+      "css": ["darkStyle1.css"],
       "js": ["content.js"]
     }
   ],

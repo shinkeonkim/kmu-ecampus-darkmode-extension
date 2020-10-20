@@ -2,6 +2,17 @@ body {
     color: rgb(179, 179, 179)!important;
 }
 
+/* 제목 및 텍스트*/
+.site_notices .active a {
+    color: rgb(233, 122, 71)!important;
+}
+h1,h2,h3,h4,h5 {
+    color: rgb(233, 122, 71)!important;
+}
+span, p {
+    color: rgb(179, 179, 179);
+}
+
 /* nav바 */
 .navbar-brand,.coursename, .usermenu {
     background-color: rgb(73, 71, 60)!important;
@@ -40,7 +51,32 @@ body {
 body.coursemos-layout-course.coursemos-layout-coursehome .course-header {
     background-color: rgb(59, 59, 57)!important;
     background-image: none!important;
+}
 
+.format-ubsweeks .course-content ul.ubsweeks li.section ul.section li.activity:hover, .format-ubsweeks .course-content ul.ubsweeks li.section ul.section li.activity:hover * {
+    background-color: rgb(106, 106, 106)!important;
+    color: black;
+}
+
+/*강의 nav */
+.course-menus div{
+    background-color: rgb(41, 46, 51)!important;
+}
+
+#coursemos-course-menu .block-coursehome .content ul.topmenu > li{
+    background-color: rgb(41, 46, 51)!important;
+}
+
+#coursemos-course-menu .block-coursehome .content ul.topmenu a {
+    color: rgb(233, 122, 71)!important;
+}
+
+.block_settings {
+    background-color: rgb(41, 46, 51)!important;
+}
+
+.block_settings div{
+    background-color: rgb(41, 46, 51)!important;
 }
 
 /* 모달 */
@@ -60,20 +96,6 @@ a.btn{
 
 .btn > span {
     color: rgb(233, 122, 71)!important;
-}
-
-
-
-/* 제목 및 텍스트*/
-.site_notices .active a {
-    color: rgb(233, 122, 71)!important;
-}
-h1,h2,h3,h4,h5 {
-    color: rgb(233, 122, 71)!important;
-}
-span, p {
-    color: rgb(179, 179, 179)!important;
-
 }
 
 

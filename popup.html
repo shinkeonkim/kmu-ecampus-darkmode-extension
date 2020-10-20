@@ -1,16 +1,101 @@
 <html>
-
-    <head>
         
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body {
+                width: 200px;
+                height: 100px;   
+                background-color: rgb(73, 71, 60)!important;
+            }
+            input[type="checkbox"] {
+                position: absolute;
+                visibility: hidden;
+            }
+            
+            label {
+                display: block;
+                position: absolute;
+                width: 60px;
+                height: 34px;
+                border-radius: 17px;
+                background-color: #ddd;
+                transition-duration: 0.2s;
+            }
+            
+            label span {
+                position: absolute;
+                left: 3px;
+                top: 3px;
+                z-index: 1;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                background-color: #fff;
+                transition-duration: 0.2s;
+            }
+            
+            label:before,
+            label:after{
+                position: absolute;
+                top: 0;
+                width: 34px;
+                font-size: 11px;
+                line-height: 34px;
+                color: #fff;
+                text-align: center;
+            }
+            
+            label:before {
+                left: 0;
+                content: 'ON';
+            }
+            
+            label:after {
+                right: 0;
+                content: 'OFF';
+            }
+            
+            input:checked + label {
+                background-color: #00c73c;
+            }
+            
+            input:checked + label span {
+                transform: translateX(26px);
+            }
+        </style>
     </head>
-
     <body>
-        <button id = "get">
-            Reload
-        </button>
-        <div id = "site-domain">
+        <table>
+            <tr>
+                <td>
+                    다크모드 적용 
+                </td>
+                <td>
+                    <input type="checkbox" id="checkbox" onchange="change(this)">
+                    <label for="checkbox"><span></span></label>
+                </td>
+            </tr>
+        </table>
 
-        </div>
+        <script type="text/javascript">
+            
+            function change(chkbox) {
+                if(chkbox.checked == true) {
+                    setDarkmode1();
+                }
+            }
+            function setDarkmode1() {
+                var link = document.createElement( "link" );
+                link.href = "darkStyle1.css";
+                link.type = "text/css";
+                link.rel = "stylesheet";
+                link.media = "screen,print";
+                
+                document.getElementsByTagName( "head" )[0].appendChild( link );
+            }
+        </script>
     </body>
-
 </html>
